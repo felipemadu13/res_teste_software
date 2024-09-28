@@ -1,66 +1,76 @@
-# Testes de Software - Prof. Eiji Adachi
 
-**Trabalho**: Implementação de Testes Automatizados para Funcionalidade de Finalização de Compra em um E-commerce  
+# Instruções para Rodar o Projeto, Testes e Cobertura
+
+Aqui estão as etapas resumidas em um guia simples para rodar o projeto, executar os testes e medir a cobertura de código.
 
 ---
 
-#### Contexto do Trabalho
+### 1. Restaurar Dependências
 
-Você receberá um projeto backend de uma aplicação de e-commerce estruturada como uma **API REST**, organizada em três camadas principais:
-- **Controller**: Responsável por lidar com as requisições HTTP.
-- **Service**: Contém a lógica de negócio.
-- **Repository**: Responsável pela interação com o banco de dados.
+Execute o comando abaixo na raiz do projeto para restaurar todas as dependências necessárias:
 
-Neste trabalho, o foco será implementar **testes automatizados** para a funcionalidade de **finalizar compra**, que faz parte de um processo de checkout em um e-commerce. 
+```bash
+dotnet restore
+```
 
-Este trabalho pode ser feito em grupos de 1 a 4 membros.
+---
 
-#### Descrição da Funcionalidade de Finalização de Compra
+### 2. Compilar o Projeto
 
-A funcionalidade de finalizar compra recebe como entradas um identificador para um **cliente** e um identificador para um **carrinho de compras**, que encapsula um conjunto de produtos selecionados pelo cliente. Ela realiza as seguintes operações:
+Compile o projeto no modo `Debug` para garantir que ele está pronto para execução e teste:
 
-1. **Consulta ao serviço de estoque**: Verifica se há quantidade suficiente de cada produto no estoque.
-2. **Cálculo do preço total da compra**: Soma o valor total dos produtos no carrinho e aplica as regras de negócio descritas a seguir.
-3. **Consulta ao serviço de pagamentos**: Verifica se o pagamento foi autorizado.
-4. **Atualização do estoque**: Se o pagamento for autorizado, dá baixa no estoque, reduzindo a quantidade dos produtos.
+```bash
+dotnet build --configuration Debug
+```
 
-Seu objetivo é implementar testes que cubram a funcionalidade de **finalizar compra** de forma isolada e integrada.
+---
 
-#### Objetivos do Trabalho
+### 3. Rodar o Projeto
 
-1. **Testar a Camada de Serviço**:  
-   - Implementar testes automatizados para o **método de cálculo do preço total da compra** na camada de serviço.  
-   - Aplicar **critérios de testes de caixa preta** (particionamento em classes de equivalência e análise de valor limites) e **caixa branca** (atingir 100% de cobertura de arestas).
-   
-2. **Testar a Camada de Controller**:
-   - Implementar testes para a **camada de controller** da funcionalidade de finalizar compra, verificando o comportamento correto do endpoint HTTP. 
-   - Para esses testes, você deverá:
-     - **Fazer um test double do tipo fake** para simular o serviço de estoque.
-     - **Usar mock objects** para simular o comportamento do serviço de pagamentos.
-     - Atingir 100% de cobertura de arestas dos métodos finalizarCompra das classes CompraController e CompraService.
+Navegue até a pasta do projeto principal (onde o `eCommerce.csproj` está localizado) e execute o comando:
 
-#### Regras para cálculo do custo da compra
-O custo de uma compra é composto pelo custo dos produtos e o custo do frete.
+```bash
+dotnet run
+```
 
-O valor do frete é calculado com base no peso total de todos itens comprados: até 5 kg não é cobrado frete; acima de 5 kg e abaixo de 10 kg é cobrado R$ 2,00 por kg; acima de 10 kg e abaixo de 50 kg é cobrado R$ 4,00 por kg; e acima de 50 kg é cobrado R$ 7,00 por kg. Além disso, clientes do tipo Ouro possuem isenção total do valor do frete, do tipo Prata possuem desconto de 50% e do tipo Bronze pagam o valor integral.
+Isso iniciará o projeto. Certifique-se de que a aplicação está funcionando corretamente antes de rodar os testes.
 
-Carrinhos de compras que custam mais de R$ 500,00 recebem um desconto de 10% e aqueles que custam mais de R$ 1000,00 recebem 20% de desconto. Vale ressaltar que este desconto é aplicado somente ao valor dos itens, excluindo o valor do frete.
+---
 
-#### Critérios de Avaliação
+### 4. Executar os Testes
 
-1. **Correção dos Testes**: Verificar se os testes cobrem adequadamente os diferentes cenários e se validam corretamente o comportamento esperado da aplicação.
-2. **Cobertura de Testes**: Avaliar a cobertura de código, em especial nos testes de caixa branca para o cálculo do preço.
-3. **Uso Adequado de Fakes e Mocks**: Avaliar o uso de fakes e mocks nos testes da camada de controller, garantindo que as dependências sejam isoladas de forma correta.
-4. **Organização e Boas Práticas**: Avaliar a organização do código dos testes, seguindo boas práticas de nomenclatura, estrutura de testes e clareza.
+Navegue até o diretório do projeto de testes (`eCommerce.Tests`) e execute o comando abaixo para rodar todos os testes:
 
-#### Entrega
+```bash
+dotnet test
+```
 
-Os seus objetivos são:
--	Projetar os casos de teste de unidade (funcionalidade de calcular custo da compra) usando os critérios de particionamento em classes de equivalência e análise de valor limites, apresentando a sistematização dos critérios numa tabela de decisão;
--	Implementar a lógica de negócio do método de calcular o custo da compra;
--	Implementar os testes executáveis tanto para os testes de unidade quanto para os testes da camada de controller;
--	Demonstrar a cobertura dos testes projetados inicialmente. Caso não se alcance os 100% de cobertura de arestas, deve-se acrescentar novos testes para que se alcance os 100% de cobertura de arestas. 
+Isso executará todos os testes no projeto de testes e exibirá o resultado no terminal.
 
-Você deverá entregar esta atividade como um projeto nomeado com os nomes dos membros seguindo o padrão nome1-nome2-nome3 (ex.: JoaoSilva-JoseSouza-EijiAdachi). Lembre-se de também alterar o nome do projeto no atributo artifactId do arquivo pom.xml. Este projeto deverá ser compactado em formato .zip e entregue via SIGAA.
+---
 
-É obrigatório um arquivo do tipo README.md descrevendo como executar o projeto, como executar os testes e como verificar a cobertura dos testes. Também é obrigatório o projeto conter um documento (pode ser uma planilha) com todo o projeto dos casos de testes (partições, limites, tabela de decisão, etc).
+### 5. Rodar os Testes com Cobertura de Código
+
+Para executar os testes e coletar a cobertura, utilize o comando abaixo a partir do diretório do projeto de testes:
+
+```bash
+dotnet test --collect:"XPlat Code Coverage"
+```
+
+Isso gerará um relatório de cobertura de código na pasta `TestResults`.
+
+---
+
+### 6. Gerar Relatório Visual de Cobertura (Opcional)
+
+Use o `ReportGenerator` para converter o relatório em um formato visual como HTML:
+
+```bash
+reportgenerator -reports:"./TestResults/**/coverage.cobertura.xml" -targetdir:"./coverage-report" -reporttypes:Html
+```
+
+Depois, abra o arquivo `index.html` na pasta `coverage-report` para visualizar o relatório detalhado.
+
+---
+
+Esse guia resume as principais etapas para rodar o projeto, executar os testes e medir a cobertura de código no ambiente .NET.

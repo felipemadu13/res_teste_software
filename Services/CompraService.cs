@@ -96,9 +96,55 @@ namespace ecommerce.Services
             return new CompraDTO(true, pagamento.TransacaoId, "Compra finalizada com sucesso.");
         }
 
+        private decimal CalcularFrete(decimal peso)
+        {
+            decimal frete = 0;
+
+            if(peso > 5 && peso <= 10)
+            {
+                frete += peso * 2;
+            }
+            else if( peso > 10 && peso <= 50)
+            {
+                frete += peso * 4;
+            }
+            else if( peso > 50 )
+            {
+                frete += peso * 7;
+            }
+
+            return frete;
+        }
+
         public decimal CalcularCustoTotal(CarrinhoDeCompras carrinho)
         {
-            return carrinho.Itens.Sum(item => item.Produto.Preco * item.Quantidade);
+            var custoProdutos = carrinho.Itens.Sum(item => item.Produto.Preco * item.Quantidade);
+            var pesoProdutos = carrinho.Itens.Sum(item => item.Produto.Peso * item.Quantidade);
+            decimal frete = CalcularFrete(pesoProdutos);
+
+            switch(carrinho.Cliente.Tipo)
+            {
+                case TipoCliente.OURO:
+                    frete = 0;
+                break;
+                case TipoCliente.PRATA:
+                    frete *= 0.5m;
+                break;
+                case TipoCliente.BRONZE:
+                default:
+                break;
+            }
+
+            if(custoProdutos > 500 && custoProdutos <= 1000)
+            {
+                custoProdutos = custoProdutos - (custoProdutos * 0.1m);
+            }
+            else if(custoProdutos > 1000)
+            {
+                custoProdutos = custoProdutos - (custoProdutos * 0.2m);
+            }
+
+            return custoProdutos + frete;
         }
 
     }
