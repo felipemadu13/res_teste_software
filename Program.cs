@@ -2,6 +2,9 @@ using ecommerce.Services;
 using eCommerce.External;
 using eCommerce.External.Fake;
 using eCommerce.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +24,6 @@ builder.Services.AddScoped<IPagamentoExternal, PagamentoSimulado>(); // Registro
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
