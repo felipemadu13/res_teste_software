@@ -59,7 +59,7 @@ namespace ecommerce.Services
             _carrinhos[1] = carrinho;
         }
 
-        public async Task<CompraDTO> FinalizarCompraAsync(long carrinhoId, long clienteId)
+        public virtual async Task<CompraDTO> FinalizarCompraAsync(long carrinhoId, long clienteId)
         {
             if (!_clientes.TryGetValue(clienteId, out var cliente) || !_carrinhos.TryGetValue(carrinhoId, out var carrinho))
             {

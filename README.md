@@ -65,6 +65,14 @@ Isso gerará um relatório de cobertura de código na pasta `TestResults`.
 
 Use o `ReportGenerator` para converter o relatório em um formato visual como HTML:
 
+Para instalar o ReportGenerator usando dotnet tool, abra o terminal e execute o seguinte comando:  
+
+```bash
+dotnet tool install -g dotnet-reportgenerator-globaltool
+```
+
+Depois, execute o comando abaixo:  
+
 ```bash
 reportgenerator -reports:"./TestResults/**/coverage.cobertura.xml" -targetdir:"./coverage-report" -reporttypes:Html
 ```

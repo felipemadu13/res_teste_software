@@ -43,7 +43,6 @@ namespace eCommerce.Tests
 
 
         [Fact]
-
         public async Task FinalizarCompra_Success_ReturnsOk()
 
         {
@@ -73,7 +72,6 @@ namespace eCommerce.Tests
 
 
         [Fact]
-
         public async Task FinalizarCompra_ArgumentException_ReturnsBadRequest()
 
         {
@@ -101,7 +99,6 @@ namespace eCommerce.Tests
 
 
         [Fact]
-
         public async Task FinalizarCompra_InvalidOperationException_ReturnsConflict()
 
         {
@@ -129,7 +126,6 @@ namespace eCommerce.Tests
 
 
         [Fact]
-
         public async Task FinalizarCompra_Exception_ReturnsInternalServerError()
 
         {
