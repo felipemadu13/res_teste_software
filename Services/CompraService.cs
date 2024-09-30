@@ -11,7 +11,7 @@ using Ecommerce.Entity;
 
 namespace ecommerce.Services
 {
-    public class CompraService
+    public class CompraService : ICompraService
     {
         private readonly CarrinhoDeComprasService _carrinhoService;
         private readonly ClienteService _clienteService;

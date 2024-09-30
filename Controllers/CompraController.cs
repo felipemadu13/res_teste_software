@@ -1,5 +1,6 @@
 using ecommerce.Services;
 using eCommerce.Domain.DTO;
+using eCommerce.Services;
 using Ecommerce.Entity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,8 +11,8 @@ using System.Threading.Tasks;
 [ApiController]
 public class CompraController : ControllerBase
 {
-    private readonly CompraService _compraService;
-    public CompraController(CompraService compraService)
+    private readonly ICompraService _compraService;
+    public CompraController(ICompraService compraService)
     {
         _compraService = compraService;
     }

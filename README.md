@@ -1,9 +1,13 @@
+# Testes de Software - Finalização de Compra em E-commerce
 
-# Instruções para Rodar o Projeto, Testes e Cobertura
+*Disciplina:* Teste de Software
+*Professor:* Eiji Adachi
 
-Aqui estão as etapas resumidas em um guia simples para rodar o projeto, executar os testes e medir a cobertura de código.
+## Descrição do Projeto
+Este projeto é parte do trabalho de implementação de testes automatizados para a funcionalidade de finalização de compra em um e-commerce, desenvolvido como parte da disciplina de Testes de Software. A aplicação backend segue a arquitetura API REST, organizada em três camadas: Controller, Service e Repository.
 
----
+
+## Instruções para Rodar o Projeto, Testes e Cobertura
 
 ### 1. Restaurar Dependências
 
@@ -81,4 +85,4 @@ Depois, abra o arquivo `index.html` na pasta `coverage-report` para visualizar o
 
 ---
 
-Esse guia resume as principais etapas para rodar o projeto, executar os testes e medir a cobertura de código no ambiente .NET.
+

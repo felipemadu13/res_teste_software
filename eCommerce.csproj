@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
