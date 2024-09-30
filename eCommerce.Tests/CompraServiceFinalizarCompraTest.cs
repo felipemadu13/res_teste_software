@@ -34,62 +34,124 @@ namespace ecommerce.Services.Tests
             );
         }
 
-        [Theory]
-        [InlineData(1, 1, true, true, true)]  // Cliente e carrinho existentes, estoque disponível, pagamento autorizado, baixa bem-sucedida
-        [InlineData(1, 1, false, true, true)] // Cliente e carrinho existentes, estoque indisponível
-        [InlineData(1, 1, true, false, true)] // Cliente e carrinho existentes, pagamento não autorizado
-        [InlineData(99, 1, true, true, true)] // Cliente não existente
-        [InlineData(1, 99, true, true, true)] // Carrinho não existente
-        [InlineData(1, 1, true, true, false)] // Baixa de estoque falha, pagamento cancelado com sucesso
-        public async Task FinalizarCompraAsync_TestCases(long clienteId, long carrinhoId, bool estoqueDisponivel, bool pagamentoAutorizado, bool baixaEstoqueSucesso)
+        [Fact]
+        public async Task FinalizarCompraAsync_Sucesso_DeveRetornarCompraDTO()
         {
             // Arrange
+            long clienteId = 1;
+            long carrinhoId = 1;
             var cliente = new Cliente(clienteId, "Cliente Teste", "Endereco Teste", TipoCliente.PRATA);
             var produto = new Produto(1, "Produto Teste", "Descrição Teste", 10m, 5, TipoProduto.ELETRONICO);
             var carrinho = new CarrinhoDeCompras(carrinhoId, cliente, new List<ItemCompra> { new ItemCompra(1, produto, 2) }, DateTime.Now);
-            var pagamento = new PagamentoDTO(pagamentoAutorizado, 12345);
+            var pagamento = new PagamentoDTO(true, 12345);
             var disponibilidade = new DisponibilidadeDTO(true, new List<long>());
-            var baixaDTO = new EstoqueBaixaDTO(baixaEstoqueSucesso);
+            var baixaDTO = new EstoqueBaixaDTO(true);
 
-            // Configuração dos Mocks para retorno esperado
-            _clienteServiceMock.Setup(x => x.BuscarPorId(It.IsAny<long>())).Returns((long id) => id == clienteId ? cliente : null);
-            _carrinhoServiceMock.Setup(x => x.BuscarPorCarrinhoIdEClienteId(carrinhoId, cliente)).Returns((long carrinhoId, Cliente c) => c.Id == clienteId ? carrinho : null);
-
+            _clienteServiceMock.Setup(x => x.BuscarPorId(clienteId)).Returns(cliente);
+            _carrinhoServiceMock.Setup(x => x.BuscarPorCarrinhoIdEClienteId(carrinhoId, cliente)).Returns(carrinho);
             _estoqueExternalMock.Setup(x => x.VerificarDisponibilidade(It.IsAny<List<long>>(), It.IsAny<List<long>>())).Returns(disponibilidade);
             _pagamentoExternalMock.Setup(x => x.AutorizarPagamento(It.IsAny<long>(), It.IsAny<double>())).Returns(pagamento);
             _estoqueExternalMock.Setup(x => x.DarBaixa(It.IsAny<List<long>>(), It.IsAny<List<long>>())).Returns(baixaDTO);
-            _pagamentoExternalMock.Setup(x => x.CancelarPagamento(It.IsAny<long>(), It.IsAny<int>())).Verifiable();
+
+            // Act
+            var result = await _service.FinalizarCompraAsync(carrinhoId, clienteId);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.True(result.Sucesso);
+            Assert.Equal("Compra finalizada com sucesso.", result.Mensagem);
+        }
+
+        [Fact]
+        public async Task FinalizarCompraAsync_EstoqueIndisponivel_DeveLancarExcecao()
+        {
+            // Arrange
+            long clienteId = 1;
+            long carrinhoId = 1;
+            var cliente = new Cliente(clienteId, "Cliente Teste", "Endereco Teste", TipoCliente.PRATA);
+            var produto = new Produto(1, "Produto Teste", "Descrição Teste", 10m, 5, TipoProduto.ELETRONICO);
+            var carrinho = new CarrinhoDeCompras(carrinhoId, cliente, new List<ItemCompra> { new ItemCompra(1, produto, 2) }, DateTime.Now);
+            var disponibilidade = new DisponibilidadeDTO(false, new List<long> { 1 });
+
+            _clienteServiceMock.Setup(x => x.BuscarPorId(clienteId)).Returns(cliente);
+            _carrinhoServiceMock.Setup(x => x.BuscarPorCarrinhoIdEClienteId(carrinhoId, cliente)).Returns(carrinho);
+            _estoqueExternalMock.Setup(x => x.VerificarDisponibilidade(It.IsAny<List<long>>(), It.IsAny<List<long>>())).Returns(disponibilidade);
 
             // Act & Assert
-            if (cliente == null || carrinho == null)
-            {
-                // Expect ArgumentException for cliente ou carrinho não encontrado
-                await Assert.ThrowsAsync<ArgumentException>(() => _service.FinalizarCompraAsync(carrinhoId, clienteId));
-            }
-            else if (!estoqueDisponivel)
-            {
-                // Expect InvalidOperationException for itens fora de estoque
-                await Assert.ThrowsAsync<InvalidOperationException>(() => _service.FinalizarCompraAsync(carrinhoId, clienteId));
-            }
-            else if (!pagamentoAutorizado)
-            {
-                // Expect InvalidOperationException for pagamento não autorizado
-                await Assert.ThrowsAsync<InvalidOperationException>(() => _service.FinalizarCompraAsync(carrinhoId, clienteId));
-            }
-            else if (!baixaEstoqueSucesso)
-            {
-                // Expect InvalidOperationException for erro ao dar baixa no estoque
-                await Assert.ThrowsAsync<InvalidOperationException>(() => _service.FinalizarCompraAsync(carrinhoId, clienteId));
-                _pagamentoExternalMock.Verify(x => x.CancelarPagamento(cliente.Id, pagamento.TransacaoId), Times.Once);
-            }
-            else
-            {
-                // Expect successful purchase
-                var result = await _service.FinalizarCompraAsync(carrinhoId, clienteId);
-                Assert.NotNull(result);
-                Assert.True(result.Sucesso);
-                Assert.Equal("Compra finalizada com sucesso.", result.Mensagem);
-            }
+            await Assert.ThrowsAsync<InvalidOperationException>(() => _service.FinalizarCompraAsync(carrinhoId, clienteId));
+        }
+
+        [Fact]
+        public async Task FinalizarCompraAsync_PagamentoNaoAutorizado_DeveLancarExcecao()
+        {
+            // Arrange
+            long clienteId = 1;
+            long carrinhoId = 1;
+            var cliente = new Cliente(clienteId, "Cliente Teste", "Endereco Teste", TipoCliente.PRATA);
+            var produto = new Produto(1, "Produto Teste", "Descrição Teste", 10m, 5, TipoProduto.ELETRONICO);
+            var carrinho = new CarrinhoDeCompras(carrinhoId, cliente, new List<ItemCompra> { new ItemCompra(1, produto, 2) }, DateTime.Now);
+            var disponibilidade = new DisponibilidadeDTO(true, new List<long>());
+            var pagamento = new PagamentoDTO(false, 12345);
+
+            _clienteServiceMock.Setup(x => x.BuscarPorId(clienteId)).Returns(cliente);
+            _carrinhoServiceMock.Setup(x => x.BuscarPorCarrinhoIdEClienteId(carrinhoId, cliente)).Returns(carrinho);
+            _estoqueExternalMock.Setup(x => x.VerificarDisponibilidade(It.IsAny<List<long>>(), It.IsAny<List<long>>())).Returns(disponibilidade);
+            _pagamentoExternalMock.Setup(x => x.AutorizarPagamento(It.IsAny<long>(), It.IsAny<double>())).Returns(pagamento);
+
+            // Act & Assert
+            await Assert.ThrowsAsync<InvalidOperationException>(() => _service.FinalizarCompraAsync(carrinhoId, clienteId));
+        }
+
+        [Fact]
+        public async Task FinalizarCompraAsync_ClienteNaoEncontrado_DeveLancarArgumentException()
+        {
+            // Arrange
+            long clienteId = 99; // ID não existente
+            long carrinhoId = 1;
+
+            _clienteServiceMock.Setup(x => x.BuscarPorId(clienteId)).Returns((Cliente)null);
+
+            // Act & Assert
+            await Assert.ThrowsAsync<ArgumentException>(() => _service.FinalizarCompraAsync(carrinhoId, clienteId));
+        }
+
+        [Fact]
+        public async Task FinalizarCompraAsync_CarrinhoNaoEncontrado_DeveLancarArgumentException()
+        {
+            // Arrange
+            long clienteId = 1;
+            long carrinhoId = 99; // ID não existente
+            var cliente = new Cliente(clienteId, "Cliente Teste", "Endereco Teste", TipoCliente.PRATA);
+
+            _clienteServiceMock.Setup(x => x.BuscarPorId(clienteId)).Returns(cliente);
+            _carrinhoServiceMock.Setup(x => x.BuscarPorCarrinhoIdEClienteId(carrinhoId, cliente)).Returns((CarrinhoDeCompras)null);
+
+            // Act & Assert
+            await Assert.ThrowsAsync<ArgumentException>(() => _service.FinalizarCompraAsync(carrinhoId, clienteId));
+        }
+
+        [Fact]
+        public async Task FinalizarCompraAsync_BaixaEstoqueFalha_DeveLancarExcecao()
+        {
+            // Arrange
+            long clienteId = 1;
+            long carrinhoId = 1;
+            var cliente = new Cliente(clienteId, "Cliente Teste", "Endereco Teste", TipoCliente.PRATA);
+            var produto = new Produto(1, "Produto Teste", "Descrição Teste", 10m, 5, TipoProduto.ELETRONICO);
+            var carrinho = new CarrinhoDeCompras(carrinhoId, cliente, new List<ItemCompra> { new ItemCompra(1, produto, 2) }, DateTime.Now);
+            var disponibilidade = new DisponibilidadeDTO(true, new List<long>());
+            var pagamento = new PagamentoDTO(true, 12345);
+            var baixaDTO = new EstoqueBaixaDTO(false);
+
+            _clienteServiceMock.Setup(x => x.BuscarPorId(clienteId)).Returns(cliente);
+            _carrinhoServiceMock.Setup(x => x.BuscarPorCarrinhoIdEClienteId(carrinhoId, cliente)).Returns(carrinho);
+            _estoqueExternalMock.Setup(x => x.VerificarDisponibilidade(It.IsAny<List<long>>(), It.IsAny<List<long>>())).Returns(disponibilidade);
+            _pagamentoExternalMock.Setup(x => x.AutorizarPagamento(It.IsAny<long>(), It.IsAny<double>())).Returns(pagamento);
+            _estoqueExternalMock.Setup(x => x.DarBaixa(It.IsAny<List<long>>(), It.IsAny<List<long>>())).Returns(baixaDTO);
+
+            // Act & Assert
+            await Assert.ThrowsAsync<InvalidOperationException>(() => _service.FinalizarCompraAsync(carrinhoId, clienteId));
+            _pagamentoExternalMock.Verify(x => x.CancelarPagamento(cliente.Id, pagamento.TransacaoId), Times.Once);
         }
     }
 }

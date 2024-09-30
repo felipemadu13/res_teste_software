@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.3797" branch-rate="0.3372" version="1.9" timestamp="1727728084" lines-covered="188" lines-valid="495" branches-covered="29" branches-valid="86">
+<coverage line-rate="0.3564" branch-rate="0.41659999999999997" version="1.9" timestamp="1727729395" lines-covered="190" lines-valid="533" branches-covered="30" branches-valid="72">
   <sources>
     <source>C:\Users\felip\</source>
   </sources>
   <packages>
-    <package name="eCommerce" line-rate="0.3797" branch-rate="0.3372" complexity="184">
+    <package name="eCommerce" line-rate="0.3564" branch-rate="0.41659999999999997" complexity="176">
       <classes>
         <class name="CompraController" filename="Documents\Github\res_teste_software\Controllers\CompraController.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
@@ -265,9 +265,9 @@
             </method>
             <method name="CalcularFrete" signature="(System.Decimal)" line-rate="1" branch-rate="1" complexity="10">
               <lines>
-                <line number="100" hits="76" branch="False" />
-                <line number="101" hits="76" branch="False" />
-                <line number="103" hits="76" branch="True" condition-coverage="100% (4/4)">
+                <line number="100" hits="75" branch="False" />
+                <line number="101" hits="75" branch="False" />
+                <line number="103" hits="75" branch="True" condition-coverage="100% (4/4)">
                   <conditions>
                     <condition number="21" type="jump" coverage="100%" />
                     <condition number="41" type="jump" coverage="100%" />
@@ -276,7 +276,7 @@
                 <line number="104" hits="24" branch="False" />
                 <line number="105" hits="24" branch="False" />
                 <line number="106" hits="24" branch="False" />
-                <line number="107" hits="52" branch="True" condition-coverage="100% (4/4)">
+                <line number="107" hits="51" branch="True" condition-coverage="100% (4/4)">
                   <conditions>
                     <condition number="79" type="jump" coverage="100%" />
                     <condition number="99" type="jump" coverage="100%" />
@@ -285,35 +285,35 @@
                 <line number="108" hits="24" branch="False" />
                 <line number="109" hits="24" branch="False" />
                 <line number="110" hits="24" branch="False" />
-                <line number="111" hits="28" branch="True" condition-coverage="100% (2/2)">
+                <line number="111" hits="27" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="139" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="112" hits="16" branch="False" />
-                <line number="113" hits="16" branch="False" />
-                <line number="114" hits="16" branch="False" />
-                <line number="116" hits="76" branch="False" />
-                <line number="117" hits="76" branch="False" />
+                <line number="112" hits="15" branch="False" />
+                <line number="113" hits="15" branch="False" />
+                <line number="114" hits="15" branch="False" />
+                <line number="116" hits="75" branch="False" />
+                <line number="117" hits="75" branch="False" />
               </lines>
             </method>
             <method name="CalcularCustoTotal" signature="(eCommerce.Domain.Entity.CarrinhoDeCompras)" line-rate="1" branch-rate="1" complexity="10">
               <lines>
-                <line number="120" hits="76" branch="False" />
-                <line number="121" hits="156" branch="False" />
-                <line number="122" hits="156" branch="False" />
-                <line number="123" hits="76" branch="False" />
-                <line number="125" hits="76" branch="True" condition-coverage="100% (4/4)">
+                <line number="120" hits="75" branch="False" />
+                <line number="121" hits="153" branch="False" />
+                <line number="122" hits="153" branch="False" />
+                <line number="123" hits="75" branch="False" />
+                <line number="125" hits="75" branch="True" condition-coverage="100% (4/4)">
                   <conditions>
                     <condition number="117" type="switch" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="128" hits="24" branch="False" />
                 <line number="129" hits="24" branch="False" />
-                <line number="131" hits="28" branch="False" />
-                <line number="132" hits="28" branch="False" />
+                <line number="131" hits="27" branch="False" />
+                <line number="132" hits="27" branch="False" />
                 <line number="135" hits="24" branch="False" />
-                <line number="138" hits="76" branch="True" condition-coverage="100% (4/4)">
+                <line number="138" hits="75" branch="True" condition-coverage="100% (4/4)">
                   <conditions>
                     <condition number="183" type="jump" coverage="100%" />
                     <condition number="208" type="jump" coverage="100%" />
@@ -322,7 +322,7 @@
                 <line number="139" hits="36" branch="False" />
                 <line number="140" hits="36" branch="False" />
                 <line number="141" hits="36" branch="False" />
-                <line number="142" hits="40" branch="True" condition-coverage="100% (2/2)">
+                <line number="142" hits="39" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="257" type="jump" coverage="100%" />
                   </conditions>
@@ -330,8 +330,8 @@
                 <line number="143" hits="18" branch="False" />
                 <line number="144" hits="18" branch="False" />
                 <line number="145" hits="18" branch="False" />
-                <line number="147" hits="76" branch="False" />
-                <line number="148" hits="76" branch="False" />
+                <line number="147" hits="75" branch="False" />
+                <line number="148" hits="75" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -374,9 +374,9 @@
             <line number="58" hits="6" branch="False" />
             <line number="59" hits="6" branch="False" />
             <line number="60" hits="6" branch="False" />
-            <line number="100" hits="76" branch="False" />
-            <line number="101" hits="76" branch="False" />
-            <line number="103" hits="76" branch="True" condition-coverage="100% (4/4)">
+            <line number="100" hits="75" branch="False" />
+            <line number="101" hits="75" branch="False" />
+            <line number="103" hits="75" branch="True" condition-coverage="100% (4/4)">
               <conditions>
                 <condition number="21" type="jump" coverage="100%" />
                 <condition number="41" type="jump" coverage="100%" />
@@ -385,7 +385,7 @@
             <line number="104" hits="24" branch="False" />
             <line number="105" hits="24" branch="False" />
             <line number="106" hits="24" branch="False" />
-            <line number="107" hits="52" branch="True" condition-coverage="100% (4/4)">
+            <line number="107" hits="51" branch="True" condition-coverage="100% (4/4)">
               <conditions>
                 <condition number="79" type="jump" coverage="100%" />
                 <condition number="99" type="jump" coverage="100%" />
@@ -394,31 +394,31 @@
             <line number="108" hits="24" branch="False" />
             <line number="109" hits="24" branch="False" />
             <line number="110" hits="24" branch="False" />
-            <line number="111" hits="28" branch="True" condition-coverage="100% (2/2)">
+            <line number="111" hits="27" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="139" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="112" hits="16" branch="False" />
-            <line number="113" hits="16" branch="False" />
-            <line number="114" hits="16" branch="False" />
-            <line number="116" hits="76" branch="False" />
-            <line number="117" hits="76" branch="False" />
-            <line number="120" hits="76" branch="False" />
-            <line number="121" hits="156" branch="False" />
-            <line number="122" hits="156" branch="False" />
-            <line number="123" hits="76" branch="False" />
-            <line number="125" hits="76" branch="True" condition-coverage="100% (4/4)">
+            <line number="112" hits="15" branch="False" />
+            <line number="113" hits="15" branch="False" />
+            <line number="114" hits="15" branch="False" />
+            <line number="116" hits="75" branch="False" />
+            <line number="117" hits="75" branch="False" />
+            <line number="120" hits="75" branch="False" />
+            <line number="121" hits="153" branch="False" />
+            <line number="122" hits="153" branch="False" />
+            <line number="123" hits="75" branch="False" />
+            <line number="125" hits="75" branch="True" condition-coverage="100% (4/4)">
               <conditions>
                 <condition number="117" type="switch" coverage="100%" />
               </conditions>
             </line>
             <line number="128" hits="24" branch="False" />
             <line number="129" hits="24" branch="False" />
-            <line number="131" hits="28" branch="False" />
-            <line number="132" hits="28" branch="False" />
+            <line number="131" hits="27" branch="False" />
+            <line number="132" hits="27" branch="False" />
             <line number="135" hits="24" branch="False" />
-            <line number="138" hits="76" branch="True" condition-coverage="100% (4/4)">
+            <line number="138" hits="75" branch="True" condition-coverage="100% (4/4)">
               <conditions>
                 <condition number="183" type="jump" coverage="100%" />
                 <condition number="208" type="jump" coverage="100%" />
@@ -427,7 +427,7 @@
             <line number="139" hits="36" branch="False" />
             <line number="140" hits="36" branch="False" />
             <line number="141" hits="36" branch="False" />
-            <line number="142" hits="40" branch="True" condition-coverage="100% (2/2)">
+            <line number="142" hits="39" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="257" type="jump" coverage="100%" />
               </conditions>
@@ -435,8 +435,8 @@
             <line number="143" hits="18" branch="False" />
             <line number="144" hits="18" branch="False" />
             <line number="145" hits="18" branch="False" />
-            <line number="147" hits="76" branch="False" />
-            <line number="148" hits="76" branch="False" />
+            <line number="147" hits="75" branch="False" />
+            <line number="148" hits="75" branch="False" />
             <line number="22" hits="82" branch="False" />
             <line number="23" hits="82" branch="False" />
             <line number="24" hits="82" branch="False" />
@@ -474,9 +474,9 @@
             <line number="70" hits="12" branch="False" />
           </lines>
         </class>
-        <class name="ecommerce.Services.CompraService/&lt;FinalizarCompraAsync&gt;d__10" filename="Documents\Github\res_teste_software\Services\CompraService.cs" line-rate="0.9" branch-rate="0.9" complexity="10">
+        <class name="ecommerce.Services.CompraService/&lt;FinalizarCompraAsync&gt;d__10" filename="Documents\Github\res_teste_software\Services\CompraService.cs" line-rate="1" branch-rate="1" complexity="10">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.9" branch-rate="0.9" complexity="10">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="10">
               <lines>
                 <line number="63" hits="6" branch="False" />
                 <line number="64" hits="6" branch="True" condition-coverage="100% (4/4)">
@@ -488,24 +488,24 @@
                 <line number="65" hits="2" branch="False" />
                 <line number="66" hits="2" branch="False" />
                 <line number="72" hits="4" branch="False" />
-                <line number="74" hits="4" branch="True" condition-coverage="50% (1/2)">
+                <line number="74" hits="4" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="254" type="jump" coverage="50%" />
+                    <condition number="254" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="75" hits="0" branch="False" />
-                <line number="76" hits="0" branch="False" />
-                <line number="79" hits="4" branch="False" />
-                <line number="81" hits="4" branch="False" />
-                <line number="83" hits="4" branch="True" condition-coverage="100% (2/2)">
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="79" hits="3" branch="False" />
+                <line number="81" hits="3" branch="False" />
+                <line number="83" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="353" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="84" hits="1" branch="False" />
                 <line number="85" hits="1" branch="False" />
-                <line number="88" hits="3" branch="False" />
-                <line number="90" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="88" hits="2" branch="False" />
+                <line number="90" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="419" type="jump" coverage="100%" />
                   </conditions>
@@ -513,8 +513,8 @@
                 <line number="91" hits="1" branch="False" />
                 <line number="92" hits="1" branch="False" />
                 <line number="93" hits="1" branch="False" />
-                <line number="96" hits="2" branch="False" />
-                <line number="97" hits="2" branch="False" />
+                <line number="96" hits="1" branch="False" />
+                <line number="97" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
@@ -529,24 +529,24 @@
             <line number="65" hits="2" branch="False" />
             <line number="66" hits="2" branch="False" />
             <line number="72" hits="4" branch="False" />
-            <line number="74" hits="4" branch="True" condition-coverage="50% (1/2)">
+            <line number="74" hits="4" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="254" type="jump" coverage="50%" />
+                <condition number="254" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="75" hits="0" branch="False" />
-            <line number="76" hits="0" branch="False" />
-            <line number="79" hits="4" branch="False" />
-            <line number="81" hits="4" branch="False" />
-            <line number="83" hits="4" branch="True" condition-coverage="100% (2/2)">
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="79" hits="3" branch="False" />
+            <line number="81" hits="3" branch="False" />
+            <line number="83" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="353" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="84" hits="1" branch="False" />
             <line number="85" hits="1" branch="False" />
-            <line number="88" hits="3" branch="False" />
-            <line number="90" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="88" hits="2" branch="False" />
+            <line number="90" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="419" type="jump" coverage="100%" />
               </conditions>
@@ -554,8 +554,8 @@
             <line number="91" hits="1" branch="False" />
             <line number="92" hits="1" branch="False" />
             <line number="93" hits="1" branch="False" />
-            <line number="96" hits="2" branch="False" />
-            <line number="97" hits="2" branch="False" />
+            <line number="96" hits="1" branch="False" />
+            <line number="97" hits="1" branch="False" />
           </lines>
         </class>
         <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -594,195 +594,291 @@
             <line number="35" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;&gt;c__DisplayClass6_0" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="0" complexity="8">
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;&gt;c__DisplayClass10_0" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
-            <method name="&lt;FinalizarCompraAsync_TestCases&gt;b__1" signature="(System.Int64)" line-rate="0" branch-rate="0" complexity="2">
+            <method name="&lt;FinalizarCompraAsync_CarrinhoNaoEncontrado_DeveLancarArgumentException&gt;b__2" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
-                  <conditions>
-                    <condition number="7" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-              </lines>
-            </method>
-            <method name="&lt;FinalizarCompraAsync_TestCases&gt;b__3" signature="(System.Int64,eCommerce.Domain.Entity.Cliente)" line-rate="0" branch-rate="0" complexity="2">
-              <lines>
-                <line number="56" hits="0" branch="True" condition-coverage="0% (0/2)">
-                  <conditions>
-                    <condition number="12" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-              </lines>
-            </method>
-            <method name="&lt;FinalizarCompraAsync_TestCases&gt;b__8" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="68" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="&lt;FinalizarCompraAsync_TestCases&gt;b__9" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="73" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="&lt;FinalizarCompraAsync_TestCases&gt;b__10" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="78" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="&lt;FinalizarCompraAsync_TestCases&gt;b__11" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="83" hits="0" branch="False" />
+                <line number="130" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="7" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="56" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="12" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="68" hits="0" branch="False" />
-            <line number="73" hits="0" branch="False" />
-            <line number="78" hits="0" branch="False" />
-            <line number="83" hits="0" branch="False" />
+            <line number="130" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;FinalizarCompraAsync_TestCases&gt;d__6" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="0" complexity="12">
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;&gt;c__DisplayClass11_0" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="12">
+            <method name="&lt;FinalizarCompraAsync_BaixaEstoqueFalha_DeveLancarExcecao&gt;b__5" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="45" hits="0" branch="False" />
-                <line number="47" hits="0" branch="False" />
-                <line number="48" hits="0" branch="False" />
-                <line number="49" hits="0" branch="False" />
-                <line number="50" hits="0" branch="False" />
-                <line number="51" hits="0" branch="False" />
-                <line number="52" hits="0" branch="False" />
-                <line number="58" hits="0" branch="False" />
-                <line number="59" hits="0" branch="False" />
-                <line number="60" hits="0" branch="False" />
-                <line number="61" hits="0" branch="False" />
-                <line number="62" hits="0" branch="False" />
-                <line number="65" hits="0" branch="True" condition-coverage="0% (0/4)">
-                  <conditions>
-                    <condition number="1257" type="jump" coverage="0%" />
-                    <condition number="1278" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="66" hits="0" branch="False" />
-                <line number="69" hits="0" branch="False" />
-                <line number="70" hits="0" branch="True" condition-coverage="0% (0/2)">
-                  <conditions>
-                    <condition number="1413" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="71" hits="0" branch="False" />
-                <line number="74" hits="0" branch="False" />
-                <line number="75" hits="0" branch="True" condition-coverage="0% (0/2)">
-                  <conditions>
-                    <condition number="1551" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
-                <line number="76" hits="0" branch="False" />
-                <line number="79" hits="0" branch="False" />
-                <line number="80" hits="0" branch="True" condition-coverage="0% (0/2)">
-                  <conditions>
-                    <condition number="1689" type="jump" coverage="0%" />
-                  </conditions>
-                </line>
+                <line number="153" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="153" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;&gt;c__DisplayClass7_0" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;FinalizarCompraAsync_EstoqueIndisponivel_DeveLancarExcecao&gt;b__3" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
                 <line number="81" hits="0" branch="False" />
-                <line number="84" hits="0" branch="True" condition-coverage="0% (0/2)">
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="81" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;&gt;c__DisplayClass8_0" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;FinalizarCompraAsync_PagamentoNaoAutorizado_DeveLancarExcecao&gt;b__4" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="102" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="102" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;&gt;c__DisplayClass9_0" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;FinalizarCompraAsync_ClienteNaoEncontrado_DeveLancarArgumentException&gt;b__1" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="115" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="115" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;FinalizarCompraAsync_BaixaEstoqueFalha_DeveLancarExcecao&gt;d__11" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="135" hits="0" branch="False" />
+                <line number="137" hits="0" branch="False" />
+                <line number="138" hits="0" branch="False" />
+                <line number="139" hits="0" branch="False" />
+                <line number="140" hits="0" branch="False" />
+                <line number="141" hits="0" branch="False" />
+                <line number="142" hits="0" branch="False" />
+                <line number="143" hits="0" branch="False" />
+                <line number="144" hits="0" branch="False" />
+                <line number="146" hits="0" branch="False" />
+                <line number="147" hits="0" branch="False" />
+                <line number="148" hits="0" branch="False" />
+                <line number="149" hits="0" branch="False" />
+                <line number="150" hits="0" branch="False" />
+                <line number="154" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="2009" type="jump" coverage="0%" />
+                    <condition number="1325" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="85" hits="0" branch="False" />
-                <line number="87" hits="0" branch="False" />
+                <line number="155" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="135" hits="0" branch="False" />
+            <line number="137" hits="0" branch="False" />
+            <line number="138" hits="0" branch="False" />
+            <line number="139" hits="0" branch="False" />
+            <line number="140" hits="0" branch="False" />
+            <line number="141" hits="0" branch="False" />
+            <line number="142" hits="0" branch="False" />
+            <line number="143" hits="0" branch="False" />
+            <line number="144" hits="0" branch="False" />
+            <line number="146" hits="0" branch="False" />
+            <line number="147" hits="0" branch="False" />
+            <line number="148" hits="0" branch="False" />
+            <line number="149" hits="0" branch="False" />
+            <line number="150" hits="0" branch="False" />
+            <line number="154" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="1325" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="155" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;FinalizarCompraAsync_CarrinhoNaoEncontrado_DeveLancarArgumentException&gt;d__10" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="120" hits="0" branch="False" />
+                <line number="122" hits="0" branch="False" />
+                <line number="123" hits="0" branch="False" />
+                <line number="124" hits="0" branch="False" />
+                <line number="126" hits="0" branch="False" />
+                <line number="127" hits="0" branch="False" />
+                <line number="131" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="120" hits="0" branch="False" />
+            <line number="122" hits="0" branch="False" />
+            <line number="123" hits="0" branch="False" />
+            <line number="124" hits="0" branch="False" />
+            <line number="126" hits="0" branch="False" />
+            <line number="127" hits="0" branch="False" />
+            <line number="131" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;FinalizarCompraAsync_ClienteNaoEncontrado_DeveLancarArgumentException&gt;d__9" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="107" hits="0" branch="False" />
+                <line number="109" hits="0" branch="False" />
+                <line number="110" hits="0" branch="False" />
+                <line number="112" hits="0" branch="False" />
+                <line number="116" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="107" hits="0" branch="False" />
+            <line number="109" hits="0" branch="False" />
+            <line number="110" hits="0" branch="False" />
+            <line number="112" hits="0" branch="False" />
+            <line number="116" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;FinalizarCompraAsync_EstoqueIndisponivel_DeveLancarExcecao&gt;d__7" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="67" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
+                <line number="70" hits="0" branch="False" />
+                <line number="71" hits="0" branch="False" />
+                <line number="72" hits="0" branch="False" />
+                <line number="73" hits="0" branch="False" />
+                <line number="74" hits="0" branch="False" />
+                <line number="76" hits="0" branch="False" />
+                <line number="77" hits="0" branch="False" />
+                <line number="78" hits="0" branch="False" />
+                <line number="82" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="67" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
+            <line number="70" hits="0" branch="False" />
+            <line number="71" hits="0" branch="False" />
+            <line number="72" hits="0" branch="False" />
+            <line number="73" hits="0" branch="False" />
+            <line number="74" hits="0" branch="False" />
+            <line number="76" hits="0" branch="False" />
+            <line number="77" hits="0" branch="False" />
+            <line number="78" hits="0" branch="False" />
+            <line number="82" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;FinalizarCompraAsync_PagamentoNaoAutorizado_DeveLancarExcecao&gt;d__8" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="86" hits="0" branch="False" />
+                <line number="88" hits="0" branch="False" />
                 <line number="89" hits="0" branch="False" />
                 <line number="90" hits="0" branch="False" />
                 <line number="91" hits="0" branch="False" />
                 <line number="92" hits="0" branch="False" />
                 <line number="93" hits="0" branch="False" />
                 <line number="94" hits="0" branch="False" />
+                <line number="96" hits="0" branch="False" />
+                <line number="97" hits="0" branch="False" />
+                <line number="98" hits="0" branch="False" />
+                <line number="99" hits="0" branch="False" />
+                <line number="103" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="45" hits="0" branch="False" />
-            <line number="47" hits="0" branch="False" />
-            <line number="48" hits="0" branch="False" />
-            <line number="49" hits="0" branch="False" />
-            <line number="50" hits="0" branch="False" />
-            <line number="51" hits="0" branch="False" />
-            <line number="52" hits="0" branch="False" />
-            <line number="58" hits="0" branch="False" />
-            <line number="59" hits="0" branch="False" />
-            <line number="60" hits="0" branch="False" />
-            <line number="61" hits="0" branch="False" />
-            <line number="62" hits="0" branch="False" />
-            <line number="65" hits="0" branch="True" condition-coverage="0% (0/4)">
-              <conditions>
-                <condition number="1257" type="jump" coverage="0%" />
-                <condition number="1278" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="66" hits="0" branch="False" />
-            <line number="69" hits="0" branch="False" />
-            <line number="70" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="1413" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="71" hits="0" branch="False" />
-            <line number="74" hits="0" branch="False" />
-            <line number="75" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="1551" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="76" hits="0" branch="False" />
-            <line number="79" hits="0" branch="False" />
-            <line number="80" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="1689" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="81" hits="0" branch="False" />
-            <line number="84" hits="0" branch="True" condition-coverage="0% (0/2)">
-              <conditions>
-                <condition number="2009" type="jump" coverage="0%" />
-              </conditions>
-            </line>
-            <line number="85" hits="0" branch="False" />
-            <line number="87" hits="0" branch="False" />
+            <line number="86" hits="0" branch="False" />
+            <line number="88" hits="0" branch="False" />
             <line number="89" hits="0" branch="False" />
             <line number="90" hits="0" branch="False" />
             <line number="91" hits="0" branch="False" />
             <line number="92" hits="0" branch="False" />
             <line number="93" hits="0" branch="False" />
             <line number="94" hits="0" branch="False" />
+            <line number="96" hits="0" branch="False" />
+            <line number="97" hits="0" branch="False" />
+            <line number="98" hits="0" branch="False" />
+            <line number="99" hits="0" branch="False" />
+            <line number="103" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ecommerce.Services.Tests.CompraServiceFinalizarCompraTest/&lt;FinalizarCompraAsync_Sucesso_DeveRetornarCompraDTO&gt;d__6" filename="Documents\Github\res_teste_software\eCommerce.Tests\CompraServiceFinalizarCompraTest.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="39" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
           </lines>
         </class>
         <class name="Ecommerce.Entity.ItemCompra" filename="Documents\Github\res_teste_software\Domain\Entity\ItemCompra.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="18" branch="False" />
+                <line number="10" hits="16" branch="False" />
               </lines>
             </method>
             <method name="get_Produto" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="258" branch="False" />
+                <line number="13" hits="252" branch="False" />
               </lines>
             </method>
             <method name="get_Quantidade" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="258" branch="False" />
+                <line number="15" hits="252" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -792,26 +888,26 @@
             </method>
             <method name=".ctor" signature="(System.Int64,Ecommerce.Entity.Produto,System.Int64)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="18" branch="False" />
-                <line number="20" hits="18" branch="False" />
-                <line number="21" hits="18" branch="False" />
-                <line number="22" hits="18" branch="False" />
-                <line number="23" hits="18" branch="False" />
-                <line number="24" hits="18" branch="False" />
+                <line number="19" hits="16" branch="False" />
+                <line number="20" hits="16" branch="False" />
+                <line number="21" hits="16" branch="False" />
+                <line number="22" hits="16" branch="False" />
+                <line number="23" hits="16" branch="False" />
+                <line number="24" hits="16" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="18" branch="False" />
-            <line number="13" hits="258" branch="False" />
-            <line number="15" hits="258" branch="False" />
+            <line number="10" hits="16" branch="False" />
+            <line number="13" hits="252" branch="False" />
+            <line number="15" hits="252" branch="False" />
             <line number="17" hits="216" branch="False" />
-            <line number="19" hits="18" branch="False" />
-            <line number="20" hits="18" branch="False" />
-            <line number="21" hits="18" branch="False" />
-            <line number="22" hits="18" branch="False" />
-            <line number="23" hits="18" branch="False" />
-            <line number="24" hits="18" branch="False" />
+            <line number="19" hits="16" branch="False" />
+            <line number="20" hits="16" branch="False" />
+            <line number="21" hits="16" branch="False" />
+            <line number="22" hits="16" branch="False" />
+            <line number="23" hits="16" branch="False" />
+            <line number="24" hits="16" branch="False" />
           </lines>
         </class>
         <class name="Ecommerce.Entity.Product" filename="Documents\Github\res_teste_software\Domain\Entity\Product.cs" line-rate="0" branch-rate="1" complexity="3">
@@ -842,32 +938,32 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="32" branch="False" />
+                <line number="12" hits="30" branch="False" />
               </lines>
             </method>
             <method name="get_Nome" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="24" branch="False" />
+                <line number="15" hits="22" branch="False" />
               </lines>
             </method>
             <method name="get_Descricao" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="24" branch="False" />
+                <line number="17" hits="22" branch="False" />
               </lines>
             </method>
             <method name="get_Preco" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="176" branch="False" />
+                <line number="20" hits="172" branch="False" />
               </lines>
             </method>
             <method name="get_Peso" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="176" branch="False" />
+                <line number="22" hits="172" branch="False" />
               </lines>
             </method>
             <method name="get_Tipo" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="24" branch="False" />
+                <line number="25" hits="22" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -877,35 +973,35 @@
             </method>
             <method name=".ctor" signature="(System.Int64,System.String,System.String,System.Decimal,System.Int32,eCommerce.Domain.Entity.TipoProduto)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="29" hits="24" branch="False" />
-                <line number="30" hits="24" branch="False" />
-                <line number="31" hits="24" branch="False" />
-                <line number="32" hits="24" branch="False" />
-                <line number="33" hits="24" branch="False" />
-                <line number="34" hits="24" branch="False" />
-                <line number="35" hits="24" branch="False" />
-                <line number="36" hits="24" branch="False" />
-                <line number="37" hits="24" branch="False" />
+                <line number="29" hits="22" branch="False" />
+                <line number="30" hits="22" branch="False" />
+                <line number="31" hits="22" branch="False" />
+                <line number="32" hits="22" branch="False" />
+                <line number="33" hits="22" branch="False" />
+                <line number="34" hits="22" branch="False" />
+                <line number="35" hits="22" branch="False" />
+                <line number="36" hits="22" branch="False" />
+                <line number="37" hits="22" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="12" hits="32" branch="False" />
-            <line number="15" hits="24" branch="False" />
-            <line number="17" hits="24" branch="False" />
-            <line number="20" hits="176" branch="False" />
-            <line number="22" hits="176" branch="False" />
-            <line number="25" hits="24" branch="False" />
+            <line number="12" hits="30" branch="False" />
+            <line number="15" hits="22" branch="False" />
+            <line number="17" hits="22" branch="False" />
+            <line number="20" hits="172" branch="False" />
+            <line number="22" hits="172" branch="False" />
+            <line number="25" hits="22" branch="False" />
             <line number="27" hits="216" branch="False" />
-            <line number="29" hits="24" branch="False" />
-            <line number="30" hits="24" branch="False" />
-            <line number="31" hits="24" branch="False" />
-            <line number="32" hits="24" branch="False" />
-            <line number="33" hits="24" branch="False" />
-            <line number="34" hits="24" branch="False" />
-            <line number="35" hits="24" branch="False" />
-            <line number="36" hits="24" branch="False" />
-            <line number="37" hits="24" branch="False" />
+            <line number="29" hits="22" branch="False" />
+            <line number="30" hits="22" branch="False" />
+            <line number="31" hits="22" branch="False" />
+            <line number="32" hits="22" branch="False" />
+            <line number="33" hits="22" branch="False" />
+            <line number="34" hits="22" branch="False" />
+            <line number="35" hits="22" branch="False" />
+            <line number="36" hits="22" branch="False" />
+            <line number="37" hits="22" branch="False" />
           </lines>
         </class>
         <class name="eCommerce.Services.CarrinhoDeComprasService" filename="Documents\Github\res_teste_software\Services\CarrinhoDeComprasService.cs" line-rate="0.21420000000000003" branch-rate="0" complexity="6">
@@ -1866,22 +1962,22 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="12" branch="False" />
+                <line number="13" hits="10" branch="False" />
               </lines>
             </method>
             <method name="get_Cliente" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="160" branch="False" />
+                <line number="16" hits="157" branch="False" />
               </lines>
             </method>
             <method name="get_Itens" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="328" branch="False" />
+                <line number="20" hits="322" branch="False" />
               </lines>
             </method>
             <method name="get_Data" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="12" branch="False" />
+                <line number="23" hits="10" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1891,51 +1987,51 @@
             </method>
             <method name=".ctor" signature="(System.Int64,eCommerce.Domain.Entity.Cliente,System.Collections.Generic.List`1&lt;Ecommerce.Entity.ItemCompra&gt;,System.DateTime)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="27" hits="12" branch="False" />
-                <line number="28" hits="12" branch="False" />
-                <line number="29" hits="12" branch="False" />
-                <line number="30" hits="12" branch="False" />
-                <line number="31" hits="12" branch="False" />
-                <line number="32" hits="12" branch="False" />
-                <line number="33" hits="12" branch="False" />
+                <line number="27" hits="10" branch="False" />
+                <line number="28" hits="10" branch="False" />
+                <line number="29" hits="10" branch="False" />
+                <line number="30" hits="10" branch="False" />
+                <line number="31" hits="10" branch="False" />
+                <line number="32" hits="10" branch="False" />
+                <line number="33" hits="10" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="13" hits="12" branch="False" />
-            <line number="16" hits="160" branch="False" />
-            <line number="20" hits="328" branch="False" />
-            <line number="23" hits="12" branch="False" />
+            <line number="13" hits="10" branch="False" />
+            <line number="16" hits="157" branch="False" />
+            <line number="20" hits="322" branch="False" />
+            <line number="23" hits="10" branch="False" />
             <line number="25" hits="216" branch="False" />
-            <line number="27" hits="12" branch="False" />
-            <line number="28" hits="12" branch="False" />
-            <line number="29" hits="12" branch="False" />
-            <line number="30" hits="12" branch="False" />
-            <line number="31" hits="12" branch="False" />
-            <line number="32" hits="12" branch="False" />
-            <line number="33" hits="12" branch="False" />
+            <line number="27" hits="10" branch="False" />
+            <line number="28" hits="10" branch="False" />
+            <line number="29" hits="10" branch="False" />
+            <line number="30" hits="10" branch="False" />
+            <line number="31" hits="10" branch="False" />
+            <line number="32" hits="10" branch="False" />
+            <line number="33" hits="10" branch="False" />
           </lines>
         </class>
         <class name="eCommerce.Domain.Entity.Cliente" filename="Documents\Github\res_teste_software\Domain\Entity\Cliente.cs" line-rate="1" branch-rate="1" complexity="6">
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="25" branch="False" />
+                <line number="14" hits="23" branch="False" />
               </lines>
             </method>
             <method name="get_Nome" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="18" branch="False" />
+                <line number="18" hits="17" branch="False" />
               </lines>
             </method>
             <method name="get_Endereco" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="18" branch="False" />
+                <line number="22" hits="17" branch="False" />
               </lines>
             </method>
             <method name="get_Tipo" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="26" hits="166" branch="False" />
+                <line number="26" hits="164" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -1945,157 +2041,157 @@
             </method>
             <method name=".ctor" signature="(System.Int64,System.String,System.String,eCommerce.Domain.Entity.TipoCliente)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="30" hits="18" branch="False" />
-                <line number="31" hits="18" branch="False" />
-                <line number="32" hits="18" branch="False" />
-                <line number="33" hits="18" branch="False" />
-                <line number="34" hits="18" branch="False" />
-                <line number="35" hits="18" branch="False" />
-                <line number="36" hits="18" branch="False" />
+                <line number="30" hits="17" branch="False" />
+                <line number="31" hits="17" branch="False" />
+                <line number="32" hits="17" branch="False" />
+                <line number="33" hits="17" branch="False" />
+                <line number="34" hits="17" branch="False" />
+                <line number="35" hits="17" branch="False" />
+                <line number="36" hits="17" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="14" hits="25" branch="False" />
-            <line number="18" hits="18" branch="False" />
-            <line number="22" hits="18" branch="False" />
-            <line number="26" hits="166" branch="False" />
+            <line number="14" hits="23" branch="False" />
+            <line number="18" hits="17" branch="False" />
+            <line number="22" hits="17" branch="False" />
+            <line number="26" hits="164" branch="False" />
             <line number="28" hits="216" branch="False" />
-            <line number="30" hits="18" branch="False" />
-            <line number="31" hits="18" branch="False" />
-            <line number="32" hits="18" branch="False" />
-            <line number="33" hits="18" branch="False" />
-            <line number="34" hits="18" branch="False" />
-            <line number="35" hits="18" branch="False" />
-            <line number="36" hits="18" branch="False" />
+            <line number="30" hits="17" branch="False" />
+            <line number="31" hits="17" branch="False" />
+            <line number="32" hits="17" branch="False" />
+            <line number="33" hits="17" branch="False" />
+            <line number="34" hits="17" branch="False" />
+            <line number="35" hits="17" branch="False" />
+            <line number="36" hits="17" branch="False" />
           </lines>
         </class>
         <class name="eCommerce.Domain.DTO.CompraDTO" filename="Documents\Github\res_teste_software\Domain\DTO\CompraDTO.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="get_Sucesso" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="7" branch="False" />
+                <line number="5" hits="6" branch="False" />
               </lines>
             </method>
             <method name="get_TransacaoPagamentoId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="6" branch="False" />
+                <line number="6" hits="5" branch="False" />
               </lines>
             </method>
             <method name="get_Mensagem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="10" branch="False" />
+                <line number="7" hits="9" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.Boolean,System.Nullable`1&lt;System.Int64&gt;,System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="6" branch="False" />
-                <line number="10" hits="6" branch="False" />
-                <line number="11" hits="6" branch="False" />
-                <line number="12" hits="6" branch="False" />
-                <line number="13" hits="6" branch="False" />
-                <line number="14" hits="6" branch="False" />
+                <line number="9" hits="5" branch="False" />
+                <line number="10" hits="5" branch="False" />
+                <line number="11" hits="5" branch="False" />
+                <line number="12" hits="5" branch="False" />
+                <line number="13" hits="5" branch="False" />
+                <line number="14" hits="5" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="7" branch="False" />
-            <line number="6" hits="6" branch="False" />
-            <line number="7" hits="10" branch="False" />
-            <line number="9" hits="6" branch="False" />
-            <line number="10" hits="6" branch="False" />
-            <line number="11" hits="6" branch="False" />
-            <line number="12" hits="6" branch="False" />
-            <line number="13" hits="6" branch="False" />
-            <line number="14" hits="6" branch="False" />
+            <line number="5" hits="6" branch="False" />
+            <line number="6" hits="5" branch="False" />
+            <line number="7" hits="9" branch="False" />
+            <line number="9" hits="5" branch="False" />
+            <line number="10" hits="5" branch="False" />
+            <line number="11" hits="5" branch="False" />
+            <line number="12" hits="5" branch="False" />
+            <line number="13" hits="5" branch="False" />
+            <line number="14" hits="5" branch="False" />
           </lines>
         </class>
         <class name="eCommerce.Domain.DTO.DisponibilidadeDTO" filename="Documents\Github\res_teste_software\Domain\DTO\DisponibilidadeDTO.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_Disponivel" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="10" branch="False" />
+                <line number="7" hits="8" branch="False" />
               </lines>
             </method>
             <method name="get_IdsProdutosIndisponiveis" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="6" branch="False" />
+                <line number="8" hits="4" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.Boolean,System.Collections.Generic.List`1&lt;System.Int64&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="6" branch="False" />
-                <line number="11" hits="6" branch="False" />
-                <line number="12" hits="6" branch="False" />
-                <line number="13" hits="6" branch="False" />
-                <line number="14" hits="6" branch="False" />
+                <line number="10" hits="4" branch="False" />
+                <line number="11" hits="4" branch="False" />
+                <line number="12" hits="4" branch="False" />
+                <line number="13" hits="4" branch="False" />
+                <line number="14" hits="4" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="10" branch="False" />
-            <line number="8" hits="6" branch="False" />
-            <line number="10" hits="6" branch="False" />
-            <line number="11" hits="6" branch="False" />
-            <line number="12" hits="6" branch="False" />
-            <line number="13" hits="6" branch="False" />
-            <line number="14" hits="6" branch="False" />
+            <line number="7" hits="8" branch="False" />
+            <line number="8" hits="4" branch="False" />
+            <line number="10" hits="4" branch="False" />
+            <line number="11" hits="4" branch="False" />
+            <line number="12" hits="4" branch="False" />
+            <line number="13" hits="4" branch="False" />
+            <line number="14" hits="4" branch="False" />
           </lines>
         </class>
         <class name="eCommerce.Domain.DTO.EstoqueBaixaDTO" filename="Documents\Github\res_teste_software\Domain\DTO\EstoqueBaixaDTO.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_Sucesso" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="9" branch="False" />
+                <line number="5" hits="4" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.Boolean)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="6" branch="False" />
-                <line number="8" hits="6" branch="False" />
-                <line number="9" hits="6" branch="False" />
-                <line number="10" hits="6" branch="False" />
+                <line number="7" hits="2" branch="False" />
+                <line number="8" hits="2" branch="False" />
+                <line number="9" hits="2" branch="False" />
+                <line number="10" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="9" branch="False" />
-            <line number="7" hits="6" branch="False" />
-            <line number="8" hits="6" branch="False" />
-            <line number="9" hits="6" branch="False" />
-            <line number="10" hits="6" branch="False" />
+            <line number="5" hits="4" branch="False" />
+            <line number="7" hits="2" branch="False" />
+            <line number="8" hits="2" branch="False" />
+            <line number="9" hits="2" branch="False" />
+            <line number="10" hits="2" branch="False" />
           </lines>
         </class>
         <class name="eCommerce.Domain.DTO.PagamentoDTO" filename="Documents\Github\res_teste_software\Domain\DTO\PagamentoDTO.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_Autorizado" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="10" branch="False" />
+                <line number="10" hits="6" branch="False" />
               </lines>
             </method>
             <method name="get_TransacaoId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="11" branch="False" />
+                <line number="11" hits="7" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(System.Boolean,System.Int64)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="6" branch="False" />
-                <line number="14" hits="6" branch="False" />
-                <line number="15" hits="6" branch="False" />
-                <line number="16" hits="6" branch="False" />
-                <line number="17" hits="6" branch="False" />
+                <line number="13" hits="3" branch="False" />
+                <line number="14" hits="3" branch="False" />
+                <line number="15" hits="3" branch="False" />
+                <line number="16" hits="3" branch="False" />
+                <line number="17" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="10" branch="False" />
-            <line number="11" hits="11" branch="False" />
-            <line number="13" hits="6" branch="False" />
-            <line number="14" hits="6" branch="False" />
-            <line number="15" hits="6" branch="False" />
-            <line number="16" hits="6" branch="False" />
-            <line number="17" hits="6" branch="False" />
+            <line number="10" hits="6" branch="False" />
+            <line number="11" hits="7" branch="False" />
+            <line number="13" hits="3" branch="False" />
+            <line number="14" hits="3" branch="False" />
+            <line number="15" hits="3" branch="False" />
+            <line number="16" hits="3" branch="False" />
+            <line number="17" hits="3" branch="False" />
           </lines>
         </class>
       </classes>

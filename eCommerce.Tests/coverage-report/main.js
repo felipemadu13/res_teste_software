@@ -239,8 +239,8 @@ var assemblies = [
       { "name": "eCommerce.Repository.ProdutoRepository", "rp": "eCommerce_ProdutoRepository.html", "cl": 0, "ucl": 31, "cal": 31, "tl": 59, "cb": 0, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "eCommerce.Services.CarrinhoDeComprasService", "rp": "eCommerce_CarrinhoDeComprasService.html", "cl": 3, "ucl": 11, "cal": 14, "tl": 37, "cb": 0, "tb": 4, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "eCommerce.Services.ClienteService", "rp": "eCommerce_ClienteService.html", "cl": 3, "ucl": 11, "cal": 14, "tl": 35, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "ecommerce.Services.CompraService", "rp": "eCommerce_CompraService.html", "cl": 86, "ucl": 2, "cal": 88, "tl": 151, "cb": 29, "tb": 30, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "ecommerce.Services.Tests.CompraServiceFinalizarCompraTest", "rp": "eCommerce_CompraServiceFinalizarCompraTest.html", "cl": 0, "ucl": 51, "cal": 51, "tl": 96, "cb": 0, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "ecommerce.Services.CompraService", "rp": "eCommerce_CompraService.html", "cl": 88, "ucl": 0, "cal": 88, "tl": 151, "cb": 30, "tb": 30, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "ecommerce.Services.Tests.CompraServiceFinalizarCompraTest", "rp": "eCommerce_CompraServiceFinalizarCompraTest.html", "cl": 0, "ucl": 89, "cal": 89, "tl": 157, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "eCommerce.Tests.CompraControllerTest", "rp": "eCommerce_CompraControllerTest.html", "cl": 0, "ucl": 31, "cal": 31, "tl": 157, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "ProductsController", "rp": "eCommerce_ProductsController.html", "cl": 0, "ucl": 17, "cal": 17, "tl": 36, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "Program", "rp": "eCommerce_Program.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 39, "cb": 0, "tb": 2, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -258,12 +258,6 @@ var riskHotspotMetrics = [
 ];
 
 var riskHotspots = [
-  {
-    "assembly": "eCommerce", "class": "ecommerce.Services.Tests.CompraServiceFinalizarCompraTest", "reportPath": "eCommerce_CompraServiceFinalizarCompraTest.html", "methodName": "FinalizarCompraAsync_TestCases()", "methodShortName": "FinalizarCompraAsync_TestCases()", "fileIndex": 0, "line": 45,
-    "metrics": [
-      { "value": 156, "exceeded": true },
-      { "value": 12, "exceeded": false },
-    ]},
   {
     "assembly": "eCommerce", "class": "eCommerce.External.Fake.EstoqueSimulado", "reportPath": "eCommerce_EstoqueSimulado.html", "methodName": "DarBaixa(System.Collections.Generic.List`1<System.Int64>,System.Collections.Generic.List`1<System.Int64>)", "methodShortName": "DarBaixa(...)", "fileIndex": 0, "line": 21,
     "metrics": [
