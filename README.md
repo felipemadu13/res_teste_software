@@ -1,7 +1,7 @@
 # Testes de Software - Finalização de Compra em E-commerce
 
-*Disciplina:* Teste de Software
-*Professor:* Eiji Adachi
+**Disciplina:** Teste de Software <br>
+**Professor:** Eiji Adachi
 
 ## Descrição do Projeto
 Este projeto é parte do trabalho de implementação de testes automatizados para a funcionalidade de finalização de compra em um e-commerce, desenvolvido como parte da disciplina de Testes de Software. A aplicação backend segue a arquitetura API REST, organizada em três camadas: Controller, Service e Repository.
