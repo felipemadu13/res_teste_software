@@ -85,4 +85,10 @@ Depois, abra o arquivo `index.html` na pasta `coverage-report` para visualizar o
 
 ---
 
+### 7. Tabelas de Decisão e Valores Limite
+
+Para ver as Tabelas clique nos Links abaixo:  
+
+[Tabela de Decisão](eCommerce.Tests\tabela_decisao.md)  
+[Tabela de Valores Limite](eCommerce.Tests\valor_limite.md)  
 
